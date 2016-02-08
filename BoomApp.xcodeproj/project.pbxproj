@@ -64,6 +64,7 @@
 				D16733FF1C68026C0064292F /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		D16733FF1C68026C0064292F /* Products */ = {
 			isa = PBXGroup;
@@ -161,6 +162,7 @@
 				TargetAttributes = {
 					D16733FD1C68026C0064292F = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = R5L4LYXALX;
 					};
 					D16734121C68026C0064292F = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -340,9 +342,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BoomApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -350,9 +355,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BoomApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -409,6 +417,7 @@
 				D167341F1C68026C0064292F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D16734201C68026C0064292F /* Build configuration list for PBXNativeTarget "BoomAppTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				D16734221C68026C0064292F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

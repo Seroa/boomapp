@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var icon: UIImageView!
+    @IBOutlet weak var bgscreen: UIImageView!
+    @IBOutlet weak var PressButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,5 +25,18 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func PressButton(sender: AnyObject) {
+        if icon.hidden == false && bgscreen.hidden == false
+        {
+        icon.hidden = true
+        bgscreen.hidden = true
+        }
+        else
+        {
+            icon.hidden = false
+            bgscreen.hidden = false
+        }
+        
+    }
 }
 
